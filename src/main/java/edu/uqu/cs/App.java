@@ -23,7 +23,23 @@ public class App{
 *        1 Tweetle 3 TweetleBeetle 5 TweetlePoodle 7 TweetleBeetle 9 Tweetle 11
 *        TweetleBeetlePoodle 13 Tweetle 15 TweetleBeetle 17 TweetlePoodle 19 TweetleBeetle 
 */
-
+public static void twisters() {
+  
+        for (int num =1; num<=110;num++){
+        if (num%2==0){
+            System.out.print("Tweetle");}
+        if(num%4==0){
+            System.out.print("Beetle");
+        }
+        if (num%6==0){
+            System.out.print("poodle");}
+        if(num%2!=0 & num%4!=0 & num%6!=0)
+        System.out.print("  "+num+" ");
+        
+        if (num%11==0){
+        System.out.println("");}
+        }
+}
 /**
 * Write a method named "phoneKeypad" that takes a string parameter (str)
 * then it replaces each letter in (str) by a number that represnts it 
@@ -43,16 +59,16 @@ public class App{
 *
 */
  
-    public static void main(String [] args) {
+  public static void main(String [] args) {
         
 
         /* Write your code here */
      
+      twisters();
+       }
        //call method twisters()
        //prompt user to enter a string 
        //call method phoneKeypad(string)
 
 
-    }
-
-}
+ }
